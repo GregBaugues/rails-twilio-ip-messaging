@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authy Demo</title>
+  <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h1>Emma's Super Secret Baby Pics</h1>
+          <hr />
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<h3>Sign In</h3>
+<% if flash.notice %>
+    <div class="alert alert-warning"><%= flash.notice %></div>
+<% end %>
+
+<div class="row">
+  <div class="col-xs-4">
+    <%= form_tag sessions_path do %>
+      <div class="form-group">
+        <%= label_tag :email %>
+        <%= text_field_tag :email, @user.email, class: "form-control"%>
+      </div>
+      <div class="form-group">
+        <%= label_tag :password %>
+        <%= password_field_tag :password, nil, class: "form-control" %>
+      </div>
+      <button class="btn btn-primary" type="submit">Sign In</button>
+    <% end %>
+  </div>
+</div>
+
+<h4>
+<%=link_to 'Not a user? Register.', new_user_path %>
+</h4>

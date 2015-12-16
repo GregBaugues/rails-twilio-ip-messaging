@@ -1,4 +1,4 @@
 development:
   adapter: postgresql
-  database: windy_city_rails_auth_demo
+  database: photos_development
   host: localhost

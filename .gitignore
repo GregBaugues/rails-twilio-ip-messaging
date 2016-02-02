@@ -1,3 +1,5 @@
 tmp/cache
 .ruby-version
 config/env.yml
+.ruby-version
+.ruby-gemset
